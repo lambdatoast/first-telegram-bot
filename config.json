@@ -1,0 +1,40 @@
+{
+  "triggers": {
+    "good": ["sex", "drugs", "alcohol", "bitcoin", "booty", "metal", "vegas"],
+    "bad": ["oasis", "vegan"]
+  },
+  "reactions": {
+    "good": [
+      ["text", "Yes, baby!"],
+      ["text", "_Now_ we're talkin'!"],
+      ["text", "EXACTLY"]
+    ],
+    "bad": [
+      ["text", "How dare you..."],
+      ["text", "GET OUTTA MY OFFICE"],
+      ["text", "KILL IT WITH FIRE"]
+    ],
+    "default": [
+      ["text", "meh"],
+      ["text", "sorry, no hablo boringo"],
+      ["anim", "https://media.giphy.com/media/5gUnOrltPvZzW/giphy.gif"]
+    ]
+  },
+  "points": {
+    "diff": {
+      "good": 1000,
+      "bad": -500
+    },
+    "reactions": {
+      "good": [
+        ["text", "*Cha-ching! POINTS points for FIRST_NAME!*"],
+        ["text", "*POINTS points for you, FIRST_NAME!*"]
+      ],
+      "bad": [
+        ["text", "_FIRST_NAME is down to POINTS points..._"],
+        ["text", "And this is how _FIRST_NAME got to POINTS points_"]
+      ]
+    }
+  },
+  "defaultState": { "points": 0 }
+}
